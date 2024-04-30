@@ -1,0 +1,121 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login_to_WATCHERS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000;
+        
+      color: white;
+      font-family: bol;
+    }
+
+    #login-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      text-align: center;
+    }
+
+    #login-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.879);
+      color: rgb(0, 0, 0);
+    }
+    ::placeholder{
+        color: rgba(108, 108, 108, 0.737);
+    }
+
+    #login-container button {
+      background-color: #268029b5;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 20px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    #login-container button.reset {
+      background-color: #86211a90;
+    }
+    h2{
+        font-size: large;
+        margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+    
+
+  <div id="login-container">
+    <h2>WELCOME TO WATCHERS</h2>
+    <form id="login-form">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required placeholder="must contain: @gmail.com">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="must contain: atleast one(A-Z,a-z,0-9,symbol) in any order">
+
+      <a id="login-link" href="javascript:void(0)"><button type="button" onclick="login()">Login</button></a>
+      <button type="button" class="reset" onclick="resetForm()">Reset</button>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      // Get values from input fields
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+      // Password validation
+      const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+
+      // Check if both email and password meet the criteria
+      if (!emailRegex.test(email) || !passwordRegex.test(password)) {
+        alert("Invalid email address or password");
+        resetForm();
+        document.getElementById("login-link").href = "javascript:void(0)";
+        return false;
+      }
+
+      // Check if the email contains "@gmail.com"
+      if (email.indexOf("@gmail.com") === -1) {
+        alert("Email must be a Gmail address");
+        resetForm();
+        document.getElementById("login-link").href = "javascript:void(0)";
+        return false;
+      }
+
+      // Store email and password in local storage (for demonstration purposes)
+      localStorage.setItem("userEmail", email);
+      localStorage.setItem("userPassword", password);
+      document.getElementById("login-link").href = "HOME.html";
+
+      alert("Login successful!");
+
+      // Redirect or perform further actions as needed
+    }
+
+    function resetForm() {
+      document.getElementById("login-form").reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>Cart</title>
+        <style>
+             body {
+    margin: 0;
+    padding: 0;
+    font-family: bol;
+    background-color: #000000;
+    color: #fff;
+}
+            
+            nav{
+                flex:1;
+                text-align: center;
+            }
+            nav ul li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 5vh;
+                margin-left: auto;
+
+               
+            }
+            nav ul li:HOVER{
+                    transform: scale(1.3);
+                    transition:0.4s;
+            }
+            nav ul li a:HOVER{
+                    color:white;
+            }
+            .navbar{
+                height:20px;
+                width:100%;
+                margin-top:15px;
+                background-color: rgba(53, 53, 53, 0.412);
+            }
+            
+            nav ul li a{
+                text-decoration: none;
+                color: rgb(138, 138, 138);
+                font-size: 13px;
+            }
+            .home:hover{
+                transform: none;
+            }
+            .home{
+                padding-top: 1.3px;
+            }
+ .cart-item 
+ {
+    display: flex;
+    box-shadow: 9px  8px 7px rgb(31, 31, 31);
+    border-radius: 0px;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    border:1px solid #1b1b1b;
+}
+.cart-item:hover{
+    transform: translate(-20px);
+    transition: 0.4s;
+}
+.cart-item img {
+    width: 100px;
+    height: 120px;
+    object-fit:cover;
+    margin-top: 10px;
+    margin-left: 10PX;
+}
+
+.item-details {
+    flex-grow: 1;
+    padding: 20px;
+}
+H2{
+    text-align: center;
+    font-family: bol;
+    font-weight: 10;
+}
+
+.item-details h3 {
+    margin: 0 0 10px;
+    color: #919191;
+}
+
+.item-details p {
+    margin: 0;
+    color: #007c27;
+}
+
+button {
+    background-color: #1b1b1b;
+    color: grey;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(255, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+    border-radius: 0px;
+}
+
+footer {
+    background-color: #0f0f0f;
+    padding: 1em;
+    text-align: center;
+    font-size: x-small;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 0px;
+    margin-top: 10%;
+    color: #fdfdfd81;
+}
+.total{
+    color:rgba(0, 184, 0, 0.94);
+    background-color: black;
+    border-radius:none;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.buy{
+    color:rgb(0, 255, 0);
+    height: 35px;
+    width:150px;
+}
+.buy:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(21, 253, 0);
+    color:white;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="HOME.html">HOME</a>
+                    </li>
+                    <li class="home">
+                        CART
+                    </li>
+                    <li>
+                        <a href="ORDER.html">ORDERS</a>
+                    </li>
+                    <li>
+                        <a href="ABOUT.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="WELCOME PAGE.html">LOGOUT</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="cart-container">
+                <h2>YOUR CART</h2>
+                <div class="cart-item">
+                    <img src="1707480613651.jpg">
+                    <div class="item-details">
+                        <h3>Classic Black Watch</h3>
+                        <p class="total">Rs.29,999</p>
+                        <button>Remove</button>
+                    </div>
+                </div>
+        
+                <div class="cart-item">
+                    <img src="1707480613665.jpg">
+                    <div class="item-details">
+                        <h3>Sporty Chronograph</h3>
+                        <p class="total">Rs.1,23,999</p>
+                        <button>Remove</button>
+                    </div>
+                </div>
+        
+                <div class="total">
+                    <p class="total1">Total: Rs.1,53,998</p>
+                    <button class="buy">BUY NOW</button>
+                </div>
+            </main>
+        
+            <footer>
+                <p>&copy; Copyright 2024 WATCHERS. - All rights reserved.</p>
+            </footer>
+    </body>
+</html>

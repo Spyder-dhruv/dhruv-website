@@ -1,0 +1,348 @@
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale= 1.0, user-scalable=no"/>
+        <style>
+            body{
+                background-color: black;
+                color:rgb(255, 255, 255);
+                font-family: bol;
+                font-size: large;
+            }
+            .h1{
+                text-align:center;
+                margin-left: 20%;
+                margin-RIGHt: 14%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-top: auto;
+                margin-bottom: auto;
+                font-size: larger;
+                COLOR: rgb(175, 175, 175);
+
+            }
+            .white{
+                color:rgb(255, 255, 255);
+            }
+            .top{
+                height:30%;
+                width:96.5%;
+                display: flex;
+                flex-direction: row;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-bottom:auto;
+                
+                
+
+            }
+            .h2{
+                text-align: center;
+                
+                margin-left: 14%;
+                COLOR: rgb(175, 175, 175);
+                margin-RIGHt: 20%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+             
+                margin-top: auto;
+                margin-bottom: auto; 
+                font-size: larger; 
+            }
+            nav{
+                flex:1;
+                text-align: center;
+            }
+            nav ul li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 5vh;
+                margin-left: auto;
+
+               
+            }
+            nav ul li:HOVER{
+                    transform: scale(1.3);
+                    transition:0.4s;
+            }
+            nav ul li a:HOVER{
+                    color:white;
+            }
+            .navbar{
+                height:20px;
+                width:100%;
+                padding-bottom: 4px;
+                background-color: rgba(53, 53, 53, 0.412);
+            }
+            
+            nav ul li a{
+                text-decoration: none;
+                color: rgb(138, 138, 138);
+                font-size: 13px;
+                margin-bottom: 1.5px;
+            }
+            .home:hover{
+                transform: none;
+            }
+            .home{
+                padding: 3px;
+                font-size:0.9em;
+            }
+            
+            .i1{
+                height:180px;
+                width:210px;
+                margin-top:5%;
+                margin-left: 9%;
+                margin-bottom:2%;
+                float:left;
+                
+
+            }
+            .label{
+                margin-top: 20px;
+            }
+            .i2{
+                height:180px;
+                width:150px;
+                margin-top:4%;
+                margin-left: 13.4%;
+                margin-bottom:2%;
+                
+                
+                float:left;
+                
+
+            }
+            h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:white;
+                text-align: center;
+            }
+            .navbar{
+                height:20px;
+                width:100%;
+                background-color: rgba(53, 53, 53, 0.412);
+            }
+          .i1:hover,.i2:hover{
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
+            .label:hover{
+                transform:scale(1.4);
+                transition: 0.5s;
+            }
+            
+            img{
+                height:100%;
+                width:100%;
+            }
+            .label{
+                height:20px;
+                width:250px;
+                
+                
+                margin-left: 9%;
+                color:white;
+                float:left;
+                text-align: center;
+            }
+            p{
+                font-size: large;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+            .container1, .container2, .container3{
+                height:auto;
+                width:auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 7%;
+                padding-bottom: 3%;
+
+            }
+            hr{
+                margin:1%;
+                border: 0.3px solid rgba(39, 38, 38, 0.67);
+                text-align:center;
+            }
+            .anu{
+                font-style: italic;
+                font-size: large;
+                color:rgba(127, 127, 125, 0.671);
+                text-align: center;
+            }
+            h3{
+                font-size: x-large;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgba(194, 192, 192, 0.899);
+                text-align: center;
+                text-decoration: underline;
+            }
+            .footer{
+                text-align: center;
+                height:60px;
+                width:100%;
+                padding-top:1%;
+                
+                background-color: rgba(32, 32, 32, 0.412);
+                
+                display: inline-block;
+                margin-top:none;
+                
+            }
+            .insta{
+                height:50px;
+                width:50px;
+                background-image: url(1707487883959.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                float:left;
+                margin-left:23%;
+            
+               
+            }
+            
+            .container{
+                height:auto;
+                width:auto;
+                display: flex;
+                flex-direction: auto;
+                align-items: center;
+                padding-left: auto;
+
+            }
+            
+            .facebook{
+                height:50px;
+                width:50px;
+                background-image: url(1707487883967.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                margin-left:20%;
+                
+                float:left;
+            }
+            .facebook:hover, .linkdin:hover, .insta:hover{
+                transform: scale(1.3);
+                transition: 0.3s;
+            }
+            .linkdin{
+                height:50px;
+                width:50px;
+                background-image: url(1707487883947.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display:flex;
+                float:left;
+                margin-left:20%;
+                
+            }
+            .foll{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(122, 122, 122);
+                text-align: center;
+                font-size: larger;
+                margin-bottom:none;
+            }
+            .last{
+                color:grey;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: x-small;
+            }
+            @media screen and (max-width: 768px) {
+            header {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            nav ul li {
+                margin-right: 2vh;
+            }
+
+            .container div {
+                flex: 0 1 48%;
+                margin: 5px;
+            }
+
+            .label {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+            nav ul li {
+                margin-right: 1vh;
+            }
+
+            .container div {
+                flex: 0 1 100%;
+                margin: 5px;
+            }
+        }
+          
+
+        </style>
+    </head>
+    <body><div class="top">
+        <h1 class="h1"><span class="white">SEAMLESS</span><br> STYLE</h1>
+        <img src="Black And White Illustrated Eagle Logo (1).png" height="100%" class="logo">
+        <h1 class="h2"><span class="white">UNMATCHED</span><br>PRECISION</h1></div>
+        <div class="navbar">
+            
+            <nav>
+                <ul>
+                    <li class="home">
+                        HOME
+                    </li>
+                    <li>
+                        <a href="CART.html">CART</a>
+                    </li>
+                    <li>
+                        <a href="ORDER.html">ORDERS</a>
+                    </li>
+                    <li>
+                        <a href="ABOUT.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="WELCOME PAGE.html">LOGOUT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1>VISIT COLLECTION</h1>
+        <div class="container">
+        <div class="container1">
+        <a href="SMART.html"><div class="i2"><img src="samrt2.jpg"></div></a>
+        <a href="SMART.html"><div class="label">Smart-watches</div></a></div>
+        
+        <div class="container2"><a href="CLASSIC.html"><div class="i1"><img src="1707463099753.jpg"></div></a>
+        <a href="CLASSIC.html"><div class="label">Classic-Analog</div></a></div>
+        
+        <div class="container3"><a href="CHRONOGRAPH.html"><div class="i2"><img src="1707481098789.jpg"></div></a>      
+        <a href="CHRONOGRAPH.html"><div class="label">Dynamic-Analog</div></a></div></div><br>
+        <hr>
+        <h3>Our customers loves us</h3>
+        <p>Watch quality is just awesome and <br>the touch and feel is really like a luxury watch.<br>I bought
+            it for my friend and <br>he just loved it.
+            Thankyou watchers<br>
+
+            <span class="anu"><b>-Anubhav Arya</b></span></p><hr>
+            <br>
+            <p class="foll">Follow us</p>
+
+            <div class="footer">
+            <a href="https://www.instagram.com/watchers._.official?igsh=MWdhNXNsZzYwNWpxdg=="><div class="insta"></div></a>
+            <a href=""><div class="Linkdin"></div></a>
+            <a href=""><div class="Facebook"></div></a>
+           
+            </div>
+            <p class="last">&copy; Copyright 2024 WATCHERS. - All rights reserved.</p>
+        </body>
+</html>

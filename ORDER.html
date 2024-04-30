@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <title>Order_History</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial scale=1.0"\>
+        <style>
+           body {
+    margin: 0;
+    padding: 0;
+    font-family: bol;
+    background-color: #000000;
+    color: #fff;
+}
+            
+            nav{
+                flex:1;
+                text-align: center;
+            }
+            nav ul li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 5vh;
+                margin-left: auto;
+
+               
+            }
+            nav ul li:HOVER{
+                    transform: scale(1.3);
+                    transition:0.4s;
+            }
+            nav ul li a:HOVER{
+                    color:white;
+            }
+            .navbar{
+                height:20px;
+                width:100%;
+                margin-top:15px;
+                background-color: rgba(53, 53, 53, 0.412);
+            }
+            
+            nav ul li a{
+                text-decoration: none;
+                color: rgb(138, 138, 138);
+                font-size: 13px;
+            }
+            .home:hover{
+                transform: none;
+            }
+            .home{
+                padding-top: 1.3px;
+            }
+ .cart-item 
+ {
+    display: flex;
+    box-shadow: 9px  8px 7px rgb(26, 26, 26);
+    border-radius: 0px;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    border:1px solid #1b1b1b;
+}
+.cart-item:hover{
+    transform: translate(-20px);
+    transition: 0.4s;
+}
+.cart-item img {
+    width: 80px;
+    height: 126px;
+    object-fit:cover;
+    margin-top: 10px;
+    margin-left: 10PX;
+}
+
+.item-details {
+    flex-grow: 1;
+    padding: 20px;
+}
+H2{
+    text-align: center;
+    font-family: bol;
+    font-weight: 10;
+}
+
+.item-details h3 {
+    margin: 0 0 10px;
+    color: #afafaf;
+}
+
+.item-details p {
+    margin: 0;
+    color: #00bb1f;
+}
+.status{
+    color:rgb(128, 128, 128);
+    border: 0.2px solid rgb(58, 58, 58);
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    float:right;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: 4px 4px  3px rgba(27, 27, 27, 0.842);
+}
+.status:hover{
+    background-color: rgb(192, 192, 192);
+    color:black;
+    box-shadow: 2px 2px  6px rgb(24, 24, 24);
+}
+.sta{
+    color:rgb(139, 139, 139);
+    background-color:  rgb(47, 47, 47);
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    float:right;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.sta:hover{
+    background-color: rgb(1, 72, 0);
+    color:rgb(13, 201, 16);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+    border-radius: 0px;
+}
+
+
+.total{
+    color:rgba(0, 184, 0, 0.94);
+    background-color: black;
+    border-radius:none;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+
+.buy{
+    color:rgb(0, 255, 0);
+    height: 35px;
+    width:150px;
+}
+.buy:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(21, 253, 0);
+    color:white;
+}
+.footer{
+    padding:0.1px;
+    background-color: rgb(19, 19, 19);
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgba(131, 131, 131, 0.729);
+}
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="HOME.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="CART.html"> CART</a>
+                    </li>
+                    <li class="home">
+                        ORDERS
+                    </li>
+                    <li>
+                        <a href="ABOUT.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="WELCOME PAGE.html">LOGOUT</a>
+                    </li>
+                </ul>
+            </nav></div>
+            <main class="cart-container">
+                <h2>YOUR ORDERS</h2>
+                <div class="cart-item">
+                    <img src="1707482044100.jpg">
+                    <div class="item-details">
+                        <h3>Blueberry Diamond Watch</h3>
+                        <p class="total">Rs. 49,99,999</p>
+                        <div class="status">
+                            Order Pending
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="cart-item">
+                    <img src="1707482044115.jpg">
+                    <div class="item-details">
+                        <h3>Legitt Edgecut Sportswear</h3>
+                        <p class="total">Rs. 6,23,999</p>
+                        <div class="status">
+                            Order Pending
+                        </div>
+                    </div>
+                    
+                </div></main>
+                <main class="cart-container">
+                    <div class="cart-item">
+                        <img src="1707480613699.jpeg">
+                        <div class="item-details">
+                            <h3>Butterfly  Smartwear</h3>
+                            <p class="total">Rs.29,999</p>
+                            <div class="sta">
+                                Order Delivered
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="cart-item">
+                        <img src="1707480613689.jpg">
+                        <div class="item-details">
+                            <h3>Sporty Black Analog</h3>
+                            <p class="total">Rs.3,24,999</p>
+                            <div class="sta">
+                                Order Delivered
+                            </div>
+                        </div>
+                        
+                    </div>
+            </main>
+            <main class="cart-container">
+                <div class="cart-item">
+                    <img src="1707480613646.jpg">
+                    <div class="item-details">
+                        <h3>Silver Coated Black Metallix</h3>
+                        <p class="total">Rs. 59,49,999</p>
+                        <div class="sta">
+                            Order Delivered
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="cart-item">
+                    <img src="1707480613622.jpg">
+                    <div class="item-details">
+                        <h3>Smart Leather Finish</h3>
+                        <p class="total">Rs.1,29,999</p>
+                        <div class="sta">
+                            Order Delivered
+                        </div>
+                    </div>
+                    
+                </div>
+        </main>
+        <div class="footer">
+            <p class="last">&copy; Copyright 2024 WATCHERS. - All rights reserved.</p>
+        </div>
+    </body>
+</html>
